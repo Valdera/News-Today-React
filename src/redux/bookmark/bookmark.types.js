@@ -1,0 +1,4 @@
+export const BookmarkActionTypes = {
+  CREATE_BOOKMARK: 'CREATE_BOOKMARK',
+  DELETE_BOOKMARK: 'DELETE_BOOKMARK'
+};

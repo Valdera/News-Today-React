@@ -1,0 +1,90 @@
+@import '../../sass/main.scss';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  z-index: 120;
+  background-color: $color-white;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-secondary;
+    line-height: 1;
+
+    & > p {
+      color: $color-secondary;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      & > span {
+        color: $color-primary;
+      }
+      &:hover,
+      :active {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > i {
+      color: $color-secondary;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.swiper {
+  width: 70rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  @include respond(phone) {
+    width: 40rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__item {
+    cursor: pointer;
+    width: max-content !important;
+    font-size: 1.4rem;
+    transition: all 0.3s ease-out;
+
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      transform: scale(1.05);
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+      @include respond(phone) {
+        margin-right: 2rem;
+      }
+    }
+
+    &--selected {
+      color: $color-primary;
+      font-weight: bold;
+    }
+  }
+}

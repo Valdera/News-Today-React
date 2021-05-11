@@ -1,0 +1,58 @@
+@import '../../sass/main.scss';
+
+.homepage {
+  background-color: $color-grey-light-1;
+  margin-top: 9vh;
+
+  &__header {
+    margin: 0 25rem;
+
+    @include respond(desktop) {
+      margin: 0 40rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 0 10rem;
+    }
+
+    @include respond(phone) {
+      margin: 0 0rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__news {
+    display: flex;
+    margin: 0 25rem;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+
+    @include respond(desktop) {
+      margin: 0 40rem;
+      margin-top: 4rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 0 10rem;
+      margin-top: 4rem;
+    }
+
+    @include respond(phone) {
+      margin: 0 2rem;
+      margin-top: 4rem;
+    }
+
+    & > * {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__spinner {
+    height: 91vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
