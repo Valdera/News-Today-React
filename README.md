@@ -13,9 +13,13 @@ NewsToday is a website to display the latest trending news from LineToday API. T
 
 - **Fauzan Valdera** - _Software Engineer_ - [Valdera](https://github.com/Valdera)
 
-# Getting Started with Create React App
+## Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Open terminal
+- Git clone this project  `git clone https://github.com/Valdera/News-Today-React.git`
+- Go to ./News-Today-React directory `cd News-Today-React/`
+- Install all the node modules `npm install`
+- Run the app in development mode `npm start` 
 
 ## Available Scripts
 
