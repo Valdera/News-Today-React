@@ -1,6 +1,6 @@
-# Diskus Web App
+# News Today
 
-NewsToday is a website to display the latest trending news. NewsToday use LineToday API.
+NewsToday is a website to display the latest trending news from LineToday API. This project was purposed for Technical Test at SejutaCita.
 
 ![plot](./mockup.jpg)
 
